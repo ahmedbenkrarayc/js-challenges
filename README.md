@@ -1,4 +1,15 @@
-# 💻 Exercices de JavaScript : Variables & Calculs
+# 💻 Exercices de JavaScript : Variables, Conditions, Boucles & Fonctions
+
+Bienvenue ! Voici une série de petits challenges à réaliser en **JavaScript** pour pratiquer :
+
+- les **variables**
+- les **opérations mathématiques**
+- les **conditions**
+- les **boucles**
+- les **fonctions**
+- la **saisie utilisateur**
+
+---
 
 ## 🔸 Challenge 1 : Affichage des informations personnelles
 
@@ -15,16 +26,12 @@ Et qui affiche ensuite ces informations dans la console.
 
 ## 🔸 Challenge 2 : Conversion de température (Celsius → Kelvin)
 
-> Demande une température en **Celsius** à l’utilisateur et affiche sa valeur en **Kelvin**.
-
 **Formule :**  
 `K = C + 273.15`
 
 ---
 
 ## 🔸 Challenge 3 : Conversion de distance (Km → Yards)
-
-> Demande une distance en **kilomètres** à l’utilisateur et affiche l’équivalent en **yards**.
 
 **Formule :**  
 `Yards = Km * 1093.61`
@@ -33,8 +40,6 @@ Et qui affiche ensuite ces informations dans la console.
 
 ## 🔸 Challenge 4 : Conversion de vitesse (km/h → m/s)
 
-> Demande une vitesse en **km/h** à l’utilisateur et affiche l’équivalent en **m/s**.
-
 **Formule :**  
 `m/s = km/h * 0.27778`
 
@@ -42,40 +47,33 @@ Et qui affiche ensuite ces informations dans la console.
 
 ## 🔸 Challenge 5 : État de l’eau selon la température
 
-> Demande une température en **Celsius** et affiche l’état de l’eau :
-
-- **C < 0** → Solide  
-- **0 ≤ C < 100** → Liquide  
-- **C ≥ 100** → Gazeux
-
----
-
-## 🔸 Challenge 6 : Opérations entre deux nombres
-
-> Demande à l’utilisateur deux **nombres réels** puis calcule et affiche :
-
-- la **somme**
-- la **différence**
-- le **produit**
-- le **quotient**
-
-avec une précision décimale.
+> Demande une température en Celsius et affiche :
+- **Solide** si C < 0
+- **Liquide** si 0 <= C < 100
+- **Gaz** si C >= 100
 
 ---
 
-## 🔸 Challenge 7 : Moyenne pondérée
+## 🔸 Challenge 6 : Opérations de base entre deux nombres
 
-> Demande trois nombres à l’utilisateur et calcule la **moyenne pondérée** avec les coefficients suivants :
+> Demande deux nombres réels à l’utilisateur (a et b), puis affiche :
+- a + b
+- a - b
+- a * b
+- a / b (avec décimales)
 
-- 1er nombre : **pondération 2**  
-- 2ème nombre : **pondération 3**  
-- 3ème nombre : **pondération 5**
+---
+
+## 🔸 Challenge 7 : Moyenne pondérée de trois nombres
+
+> Calcule la moyenne pondérée de trois nombres avec les pondérations suivantes :
+- 1er nombre : pondération 2
+- 2ème nombre : pondération 3
+- 3ème nombre : pondération 5
 
 ---
 
 ## 🔸 Challenge 8 : Moyenne géométrique
-
-> Demande trois nombres à l’utilisateur et calcule leur **moyenne géométrique**.
 
 **Formule :**  
 `Moyenne = (a * b * c)^(1/3)`
@@ -84,16 +82,12 @@ avec une précision décimale.
 
 ## 🔸 Challenge 9 : Distance entre deux points en 3D
 
-> Demande à l’utilisateur les coordonnées de **deux points** dans l’espace 3D, puis calcule la **distance** entre eux.
-
 **Formule :**  
-`Distance = √((x2-x1)² + (y2-y1)² + (z2-z1)²)`
+`Distance = √((x2 - x1)² + (y2 - y1)² + (z2 - z1)²)`
 
 ---
 
 ## 🔸 Challenge 10 : Volume d'une sphère
-
-> Demande le **rayon** d’une sphère et affiche son **volume**.
 
 **Formule :**  
 `Volume = (4/3) * π * r³`
@@ -102,27 +96,22 @@ avec une précision décimale.
 
 ## 🔸 Challenge 11 : Surface d’un rectangle
 
-> Demande la **longueur** et la **largeur** d’un rectangle, puis calcule sa **surface**.
-
 **Formule :**  
 `Surface = longueur * largeur`
 
 ---
 
-## 🔸 Challenge 12 : Nombre inversé
+## 🔸 Challenge 12 : Inverser un entier à 4 chiffres (sans boucle)
 
-> Demande un **nombre entier à quatre chiffres** et affiche ce nombre à l’**envers**, sans utiliser de boucle.
-
-📌 Exemple :  
-Entrée : `1234` → Affichage : `4321`
+> Exemple : si l’utilisateur entre `1234`, le programme doit afficher `4321`.
 
 ---
 
-## 🔸 Challenge 13 : Binaire & Hexadécimal
+## 🔸 Challenge 13 : Afficher la valeur binaire et hexadécimale d’un entier
 
-> Demande un **nombre entier** et affiche son équivalent :
-- en **binaire**
-- en **hexadécimal**
+> Saisir un entier et afficher ses représentations en :
+- **binaire**
+- **hexadécimal**
 
 ---
 
@@ -154,3 +143,36 @@ Entrée : `1234` → Affichage : `4321`
 
 📌 Exemple : si N = 5 → 1 + 2 + 3 + 4 + 5 = 15
 
+---
+
+## 🔹 Challenge 18 : Création d’une fonction de salutation
+
+> Crée une fonction appelée `saluer(nom)` qui prend un **nom** en paramètre et affiche :
+```
+Bonjour, [nom] !
+```
+
+📌 Exemple :  
+```js
+saluer("Ahmed"); // Bonjour, Ahmed !
+```
+
+---
+
+## 🔹 Challenge 19 : Fonction avec boucle et condition – Table de multiplication filtrée
+
+> Crée une fonction `afficherMultiplesDe(n, max)` qui :
+- Utilise une **boucle** pour parcourir les nombres de `1` à `max`
+- Affiche uniquement les **multiples** de `n` (condition avec `%`)
+- N’affiche rien pour les autres
+
+📌 Exemple :  
+```js
+afficherMultiplesDe(3, 10);
+// Résultat attendu :
+// 3
+// 6
+// 9
+```
+
+---
