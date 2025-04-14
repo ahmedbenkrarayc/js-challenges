@@ -126,8 +126,31 @@ Entrée : `1234` → Affichage : `4321`
 
 ---
 
-🧠 **Conseil** : Pour tester facilement les entrées utilisateur, utilise `prompt()` dans le navigateur ou `readline-sync` dans Node.js.
+## 🔹 Challenge 14 : Vérification de majorité (Condition)
+
+> Demande l’**âge** de l’utilisateur, puis affiche s’il est :
+- **Mineur** (< 18)
+- **Majeur** (≥ 18)
 
 ---
 
-Bon courage ! 💪
+## 🔹 Challenge 15 : Plus grand de trois nombres (Condition)
+
+> Demande trois **nombres** à l’utilisateur, puis affiche le **plus grand** d’entre eux.
+
+---
+
+## 🔹 Challenge 16 : Affichage des nombres pairs de 1 à N (Boucle)
+
+> Demande un **nombre N** à l’utilisateur. Affiche ensuite tous les **nombres pairs** de 1 jusqu’à N.
+
+📌 Exemple : si N = 10 → affiche : 2, 4, 6, 8, 10
+
+---
+
+## 🔹 Challenge 17 : Somme des entiers de 1 à N (Boucle)
+
+> Demande un **nombre N** à l’utilisateur. Calcule et affiche la **somme de tous les entiers** de 1 à N.
+
+📌 Exemple : si N = 5 → 1 + 2 + 3 + 4 + 5 = 15
+
