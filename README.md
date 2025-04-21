@@ -1,178 +1,172 @@
-# 💻 Exercices de JavaScript : Variables, Conditions, Boucles & Fonctions
 
-Bienvenue ! Voici une série de petits challenges à réaliser en **JavaScript** pour pratiquer :
+# 🧠 JavaScript Basics Practice – Loops, Conditions, and Functions
 
-- les **variables**
-- les **opérations mathématiques**
-- les **conditions**
-- les **boucles**
-- les **fonctions**
-- la **saisie utilisateur**
+This README contains a set of beginner-friendly JavaScript exercises designed to help you practice **loops**, **conditional statements**, **functions**, and **basic logic** — all **without using the DOM**.
 
 ---
 
-## 🔸 Challenge 1 : Affichage des informations personnelles
+## 📘 Instructions
 
-> Écris un programme qui demande à l’utilisateur :
-- son **nom**
-- son **prénom**
-- son **âge**
-- son **sexe**
-- son **adresse email**
-
-Et qui affiche ensuite ces informations dans la console.
+- Create a `.js` file and copy the exercise stubs.
+- Write the logic inside the functions.
+- Test using `console.log()` in your terminal or browser console.
 
 ---
 
-## 🔸 Challenge 2 : Conversion de température (Celsius → Kelvin)
+## 🔁 Exercise 1: Even or Odd Counter
 
-**Formule :**  
-`K = C + 273.15`
+**Function Name:** `countEvenOdd`
 
----
+**Description:**  
+Takes an array of numbers and returns how many are even and how many are odd.
 
-## 🔸 Challenge 3 : Conversion de distance (Km → Yards)
-
-**Formule :**  
-`Yards = Km * 1093.61`
-
----
-
-## 🔸 Challenge 4 : Conversion de vitesse (km/h → m/s)
-
-**Formule :**  
-`m/s = km/h * 0.27778`
-
----
-
-## 🔸 Challenge 5 : État de l’eau selon la température
-
-> Demande une température en Celsius et affiche :
-- **Solide** si C < 0
-- **Liquide** si 0 <= C < 100
-- **Gaz** si C >= 100
-
----
-
-## 🔸 Challenge 6 : Opérations de base entre deux nombres
-
-> Demande deux nombres réels à l’utilisateur (a et b), puis affiche :
-- a + b
-- a - b
-- a * b
-- a / b (avec décimales)
-
----
-
-## 🔸 Challenge 7 : Moyenne pondérée de trois nombres
-
-> Calcule la moyenne pondérée de trois nombres avec les pondérations suivantes :
-- 1er nombre : pondération 2
-- 2ème nombre : pondération 3
-- 3ème nombre : pondération 5
-
----
-
-## 🔸 Challenge 8 : Moyenne géométrique
-
-**Formule :**  
-`Moyenne = (a * b * c)^(1/3)`
-
----
-
-## 🔸 Challenge 9 : Distance entre deux points en 3D
-
-**Formule :**  
-`Distance = √((x2 - x1)² + (y2 - y1)² + (z2 - z1)²)`
-
----
-
-## 🔸 Challenge 10 : Volume d'une sphère
-
-**Formule :**  
-`Volume = (4/3) * π * r³`
-
----
-
-## 🔸 Challenge 11 : Surface d’un rectangle
-
-**Formule :**  
-`Surface = longueur * largeur`
-
----
-
-## 🔸 Challenge 12 : Inverser un entier à 4 chiffres (sans boucle)
-
-> Exemple : si l’utilisateur entre `1234`, le programme doit afficher `4321`.
-
----
-
-## 🔸 Challenge 13 : Afficher la valeur binaire et hexadécimale d’un entier
-
-> Saisir un entier et afficher ses représentations en :
-- **binaire**
-- **hexadécimal**
-
----
-
-## 🔹 Challenge 14 : Vérification de majorité (Condition)
-
-> Demande l’**âge** de l’utilisateur, puis affiche s’il est :
-- **Mineur** (< 18)
-- **Majeur** (≥ 18)
-
----
-
-## 🔹 Challenge 15 : Plus grand de trois nombres (Condition)
-
-> Demande trois **nombres** à l’utilisateur, puis affiche le **plus grand** d’entre eux.
-
----
-
-## 🔹 Challenge 16 : Affichage des nombres pairs de 1 à N (Boucle)
-
-> Demande un **nombre N** à l’utilisateur. Affiche ensuite tous les **nombres pairs** de 1 jusqu’à N.
-
-📌 Exemple : si N = 10 → affiche : 2, 4, 6, 8, 10
-
----
-
-## 🔹 Challenge 17 : Somme des entiers de 1 à N (Boucle)
-
-> Demande un **nombre N** à l’utilisateur. Calcule et affiche la **somme de tous les entiers** de 1 à N.
-
-📌 Exemple : si N = 5 → 1 + 2 + 3 + 4 + 5 = 15
-
----
-
-## 🔹 Challenge 18 : Création d’une fonction de salutation
-
-> Crée une fonction appelée `saluer(nom)` qui prend un **nom** en paramètre et affiche :
-```
-Bonjour, [nom] !
-```
-
-📌 Exemple :  
+**Function Signature:**
 ```js
-saluer("Ahmed"); // Bonjour, Ahmed !
+function countEvenOdd(arr) {
+  // Your code here
+}
+```
+
+**Example:**
+```js
+countEvenOdd([1, 2, 3, 4, 5, 6]);
+// Output: { even: 3, odd: 3 }
 ```
 
 ---
 
-## 🔹 Challenge 19 : Fonction avec boucle et condition – Table de multiplication filtrée
+## 🔢 Exercise 2: FizzBuzz
 
-> Crée une fonction `afficherMultiplesDe(n, max)` qui :
-- Utilise une **boucle** pour parcourir les nombres de `1` à `max`
-- Affiche uniquement les **multiples** de `n` (condition avec `%`)
-- N’affiche rien pour les autres
+**Function Name:** `fizzBuzz`
 
-📌 Exemple :  
+**Description:**  
+Prints numbers from 1 to 50 with the following rules:
+- If divisible by 3 → print `"Fizz"`
+- If divisible by 5 → print `"Buzz"`
+- If divisible by both → print `"FizzBuzz"`
+- Otherwise → print the number
+
+**Function Signature:**
 ```js
-afficherMultiplesDe(3, 10);
-// Résultat attendu :
-// 3
-// 6
-// 9
+function fizzBuzz() {
+  // Your code here
+}
 ```
+
+---
+
+## 🔍 Exercise 3: Prime Numbers
+
+**Function Name:** `getPrimes`
+
+**Description:**  
+Returns an array of all prime numbers from 1 to `n`.
+
+**Function Signature:**
+```js
+function getPrimes(n) {
+  // Your code here
+}
+```
+
+**Example:**
+```js
+getPrimes(20);
+// Output: [2, 3, 5, 7, 11, 13, 17, 19]
+```
+
+---
+
+## 🔢 Exercise 4: Sum of Digits
+
+**Function Name:** `sumDigits`
+
+**Description:**  
+Returns the sum of all digits in a given number.
+
+**Function Signature:**
+```js
+function sumDigits(num) {
+  // Your code here
+}
+```
+
+**Example:**
+```js
+sumDigits(1234);
+// Output: 10
+```
+
+---
+
+## 🔄 Exercise 5: Palindrome Checker
+
+**Function Name:** `isPalindrome`
+
+**Description:**  
+Checks if a given string is a palindrome.
+
+**Function Signature:**
+```js
+function isPalindrome(str) {
+  // Your code here
+}
+```
+
+**Examples:**
+```js
+isPalindrome("racecar"); // true
+isPalindrome("hello");   // false
+```
+
+---
+
+## 🔃 Exercise 6: Reverse an Array
+
+**Function Name:** `reverseArray`
+
+**Description:**  
+Reverses the elements of an array without using `reverse()`.
+
+**Function Signature:**
+```js
+function reverseArray(arr) {
+  // Your code here
+}
+```
+
+---
+
+## ✖️ Exercise 7: Multiplication Table
+
+**Function Name:** `multiplicationTable`
+
+**Description:**  
+Prints the multiplication table of a given number from 1 to 10.
+
+**Function Signature:**
+```js
+function multiplicationTable(n) {
+  // Your code here
+}
+```
+
+**Example:**
+```js
+multiplicationTable(5);
+// Output: 
+// 5 x 1 = 5
+// 5 x 2 = 10
+// ...
+// 5 x 10 = 50
+```
+
+---
+
+## ✅ Tips
+
+- Use `console.log()` to display outputs while testing.
+- Use `for`, `while`, or `do...while` loops where appropriate.
+- Think about how to break problems into smaller steps.
 
 ---
